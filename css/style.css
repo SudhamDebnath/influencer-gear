@@ -1,0 +1,250 @@
+/* --------------------------- All Fonts ---------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&family=Roboto:wght@700&display=swap');
+
+:root {
+    --primary-color: #3A3A3A;
+    --secondary-color: #E02C6D;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --gray-color: #D9DBE1;
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+    --tertiary-font: 'Roboto', sans-serif;
+    --extra-font: 'Manrope', sans-serif;
+}
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* -------------------Common Style----------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+
+.container {
+    padding: 0 120px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container--secondary {
+    padding: 100px 165px;
+}
+.container--grid {
+    padding: 0 196px;
+}
+.container--footer{
+    padding: 50px 580px;
+}
+.primary--btn {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: .7rem 1.6rem;
+    border: none;
+    border-radius: 1.3rem;
+}
+.secondary--btn{
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-align: right;
+    display: block;
+}
+
+/* -------------------- Header Section Style-------------------------- */
+.logo__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.9rem;
+    padding: 3rem 0;
+}
+
+.logo__container .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo__container .menu {}
+
+.logo__container .menu a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 1.3rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.logo__container .menu a:hover {}
+
+.header__banner__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+
+.banner__info {
+    flex-basis: 60%;
+}
+
+.banner__info>h1 {
+    font-size: 3.4rem;
+}
+
+.banner__info>p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.banner__img_all {
+    flex-basis: 35%;
+}
+
+.banner__img_all img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner__img {
+    position: relative;
+}
+
+.ellipse {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+/* ------------------------ Brands Section Style------------------------------ */
+.all__brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4.2rem;
+    padding-top: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+
+.all__brands img {
+    padding: 1rem;
+}
+
+/* -------------------- Popular Collection Section Style -------------------- */
+
+.popular__collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.collection__title{
+    grid-column: span 3;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+.collection__item {
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 1rem;
+}
+.collection__item img{
+    width: 100%;
+}
+.collection__item__title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.collection__item__price{
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: .8rem 0;
+}
+.ratting .filed{
+    color: #FB8200;
+}
+.ratting .empty{
+    color: #dddddd;
+}
+.collection__item__details{
+    font-family: var(--secondary-font);
+    font-size: .8rem;
+    font-weight: 700;
+    margin-top: .5rem;
+}
+.seemore_btn{
+    grid-column: span 3;
+}
+
+/* -------------------- Feature Product Section Style -------------------- */
+.featured__product__container{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+.featured__product__img{
+    flex-basis: 30%;
+}
+.featured__product__info{
+    flex-basis: 45%;
+}
+.featured__product__info > h2{
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.featured__product__info > p{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+.featured_btn{
+    border-radius: 0;
+    margin-top: 0.7rem;
+}
+
+/* --------------------- Footer Section Style -------------------------- */
+.footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.container--footer >h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+}
+.footer h4 , p{
+    font-family: var(--extra-font);
+    color: var(--gray-color);
+    font-size: .9rem;
+    font-weight: 700;
+}
+.footer .social{
+    padding: 1rem;
+}
+.footer .social a{
+    padding: 0.8rem 1rem;
+    color: var(--gray-color);
+}
